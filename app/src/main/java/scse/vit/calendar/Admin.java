@@ -49,11 +49,11 @@ public class Admin extends AppCompatActivity {
         prefs = getSharedPreferences(myprefs, Context.MODE_PRIVATE);
         if(prefs.getString("upload","").equals("studentfile"))
         {
-            PDF_UPLOAD_HTTP_URL = "https://valiantcity.000webhostapp.com/calendar/upload.php";
+            PDF_UPLOAD_HTTP_URL = /*upload url for student*/;
         }
         else
         {
-            PDF_UPLOAD_HTTP_URL = "https://valiantcity.000webhostapp.com/calendar/faculty/upload.php";
+            PDF_UPLOAD_HTTP_URL = /*upload url for faculty*/;
         }
 
         AllowRunTimePermission();
