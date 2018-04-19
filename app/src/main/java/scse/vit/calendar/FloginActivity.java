@@ -26,11 +26,11 @@ public class FloginActivity extends AppCompatActivity {
         loginbut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(key.getText().toString().equals("Vitscse01")){
+                if(key.getText().toString().equals("pass")){
                     edit = prefs.edit();
                     edit.putString("usertype","faculty");
                     edit.putString("username","scse");
-                    edit.putString("password","Vitscse01");
+                    edit.putString("password","pass");
                     edit.apply();
                     Intent launchNextActivity;
                     launchNextActivity = new Intent(FloginActivity.this, Calendar.class);
